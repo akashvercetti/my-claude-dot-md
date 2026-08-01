@@ -1,3 +1,9 @@
+# Verify before asserting
+
+- This applies to everything, not just docs and plans: any technical claim I make in any answer - how a tool, package manager, library, API, framework, config, or command behaves; versions; flags; file paths; whether something is supported - must be verified before I state it, not recalled from memory.
+- Check the actual code, run the command, or consult an authoritative up-to-date source online, then answer. Prefer "let me verify" over a confident guess.
+- Be explicit about confidence. Separate what I have actually verified from what I still need to confirm (for example by running it). Never present an unverified assumption as fact. If I cannot verify something, say so plainly instead of guessing.
+
 # Writing Style
 
 - Do not create git worktrees.
