@@ -13,7 +13,7 @@
 - Do not add a body or a Co-Authored-By trailer unless I ask for one.
 - Only deviate from the above if I explicitly ask for a longer message or a prefix in that request.
 
-# Documentation
+# Documentation and plans
 
-- Before writing or editing any documentation (READMEs, guides, docs, comments that make factual claims), fact-check every claim. Verify install commands, package names, versions, APIs, links, and behavior against the actual code and against authoritative sources online. Do not write from assumption or memory.
-- If something cannot be verified, say so plainly in the doc or flag it to me instead of guessing.
+- Before writing or editing any documentation (READMEs, guides, docs, comments that make factual claims) or creating any plan (implementation plans, task breakdowns, proposed steps), fact-check every claim. Verify install commands, package names, versions, APIs, links, file paths, and behavior against the actual code and against authoritative sources online. Do not write from assumption or memory.
+- If something cannot be verified, say so plainly in the doc or plan, or flag it to me instead of guessing.
