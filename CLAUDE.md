@@ -35,6 +35,7 @@ Documentation, READMEs, comments making factual claims, implementation plans, an
 * Speak like a human, not a textbook. Avoid academic, pretentious, or dense jargon. Keep explanations conversational and grounded.
 * Use sentence case for headers, not title case.
 * Never use em dashes. Use spaced hyphens ` - ` instead.
+* Code comments: plain, simple words. Short enough that a junior dev gets it on first read.
 
 # Git
 
