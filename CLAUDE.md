@@ -23,19 +23,34 @@ Applies to every technical claim, in chat and in files: how a tool, package mana
 ## Marking uncertainty
 
 * Tag any unverified claim inline as `[unverified]`.
-* For any answer with more than two or three technical claims, end with a short list: what was verified and how, and what was not.
+* When an answer rests on several technical claims and some of them went unverified, close with a short list: what was verified and how, and what was not. Skip the list when everything was verified.
 * "I do not know" and "I could not verify this" are acceptable answers. A guess dressed as fact is not.
 
 ## Written artifacts
 
 Documentation, READMEs, comments making factual claims, implementation plans, and task breakdowns get a stricter bar: no `[unverified]` content ships into a file. Either verify it, or leave a `TODO(verify):` marker and tell me about it.
 
+# Scope and judgment
+
+* Order of preference when something is unclear: verify it against the repo, then ask me, then assume and flag the assumption. Do not ask what the code already answers.
+* Ask when guessing wrong would waste real work or be annoying to undo. Otherwise pick the most likely reading, state it in one line, and proceed.
+* If you do not understand something, say so. Do not code around the confusion or wrap it in defensive handling.
+* Do not rename, refactor, reformat, or clean up anything outside the scope of what I asked for.
+* If a simpler approach exists, say so. Push back when warranted.
+
+For work spanning multiple files or more than about three steps, state a brief plan first, with a check for each step:
+
+```
+1. [Step] -> verify: [check]
+2. [Step] -> verify: [check]
+```
+
 # Writing style
 
 * Speak like a human, not a textbook. Avoid academic, pretentious, or dense jargon. Keep explanations conversational and grounded.
 * Use sentence case for headers, not title case.
 * Never use em dashes. Use spaced hyphens ` - ` instead.
-* Code comments: plain, simple words. Short enough that a junior dev gets it on first read.
+* Code comments: plain, simple words. Short enough that a junior dev gets it on first read. Prefer everyday words over jargon (for example "has the same name as" over "collides with").
 
 # Git
 
