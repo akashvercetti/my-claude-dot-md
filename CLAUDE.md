@@ -50,7 +50,19 @@ For work spanning multiple files or more than about three steps, state a brief p
 * Speak like a human, not a textbook. Avoid academic, pretentious, or dense jargon. Keep explanations conversational and grounded.
 * Use sentence case for headers, not title case.
 * Never use em dashes. Use spaced hyphens ` - ` instead.
-* Code comments: plain, simple words. Short enough that a junior dev gets it on first read. Prefer everyday words over jargon (for example "has the same name as" over "collides with").
+* Explanation questions get a plain-language answer by default. These are questions about what something does or why a situation happens: "explain this change", "what does this do", "what is this for". Debugging, design discussion, review and implementation talk stay technical.
+  * No class, method, field or wire key names. No file paths or line numbers.
+  * No SDK, framework or product vocabulary. Either avoid the domain term or say what it means the first time it is used.
+  * Start with the situation it applies to and who notices it. Give the mechanism after that, and only as much of it as the answer needs.
+  * A concrete example with real numbers beats a general description.
+  * Close with one line offering the technical version.
+* Code comments: write for a dev whose first language is not English.
+  * One fact per sentence. Do not chain facts with "and", "so", or "which".
+  * No idioms or phrasal verbs. For example "the day changed" over "roll the day over".
+  * No participial clauses. For example "no unit was counted after that" over "with no unit having been counted since".
+  * Everyday words over jargon. For example "has the same name as" over "collides with".
+  * Applies to doc comments too. A doc comment may be long, but every sentence in it still passes the tests above.
+  * Before committing, re-read the comments you added and check them against this list.
 
 # Git
 
